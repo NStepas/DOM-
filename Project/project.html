@@ -18,7 +18,7 @@
     <form name="data" id="formElem">
         <div class="main-div" id="row_0"></div>
         <div class="first_name_case"><label for="first_name">First name</label>
-            <input onchange="checkTypeOfName()" type="text" class="in" name="firstName" id="firstName">
+            <input onchange="checkTypeOfName()"  type="text" class="in" name="firstName" id="firstName">
         </div>
         <div class="second_name_case"><label for="second_name">Second name</label>
             <input onchange="checkTypeOfName()" type="text" class="in" name="secondName" id="secondName">
@@ -28,7 +28,7 @@
         </div>
         <div class="type_of_abonement_case" id="type_of_abonement_case">
             <label for="type_of_abonement">Type of abonement</label>
-            <select id="type_of_abonement" name="abonement">
+            <select onchange="CheckTypeOfAbonement()" id="type_of_abonement" name="abonement">
                 <option disabled selected value>Choose type of abonement</option>
                 <option value="all_day">All day</option>
                 <option value="morning">Morning</option>
@@ -39,26 +39,11 @@
             <button type="button" class="showAllClients" onclick="showAllClients()">Show all</button>
         </div>
        
-        <div class="button_case"><input id="but" type="button" class="button" value="Submit" onclick="toObject()"></div>
-        <!-- <div class="clientDelete">
-                <input placeholder="input index of client for delete" name="clientIndex" type='number' class="clientDelete" value="">
-            <button type="button" class="client-delete" onclick="deleteClient()">Remove</button> 
-        </div> -->
+        <div class="button_case"><input id="but" disabled type="button" class="button" value="Submit" onclick="toObject()"></div>
     </div>
     </form>
 
-    
-    <!-- <div class="clientDelete"> 
-        <input class="clientDelete" placeholder="choose name of clien for delete" name="clientDelete" type="text" value="">
-        <button type="button" class="clientDelete" id="clientDelete" onclick="clienDelete()">Delete</button>
-    </div> -->
     <div class="others"></div>
-
-<!-- <script>
-    let literals = `hello`;
-    let finalText = `Everione: ${(literals)}`; 
-    document.getElementsById("other").innerHTML = finalText;
- </script> -->
 
     <p class='p1'></p>
 <script src="project.js"></script>
